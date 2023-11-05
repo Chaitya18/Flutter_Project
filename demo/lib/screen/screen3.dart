@@ -23,20 +23,19 @@ class My3rdScreen extends StatelessWidget {
                 decoration: BoxDecoration(color: Colors.green),
               ), //for 2
               Container(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Container(
-                        height: 50,
-                        width: 300,
-                        decoration: BoxDecoration(color: Colors.lightBlue)), //3
-                    Container(
-                        height: 150,
-                        width: 300,
-                        decoration: BoxDecoration(color: Colors.deepOrange)) //4
-                  ],
-                ),
-              )
+                  child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Container(
+                      height: 50,
+                      width: 300,
+                      decoration: BoxDecoration(color: Colors.lightBlue)), //3
+                  Container(
+                      height: 150,
+                      width: 300,
+                      decoration: BoxDecoration(color: Colors.deepOrange)) //4
+                ],
+              )),
             ],
           ),
           Container(
