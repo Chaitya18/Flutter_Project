@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myproject2/NavigationDrawer/drawerheader.dart';
+import 'package:myproject2/bottomNavigation/HomeScreen.dart';
+import 'package:myproject2/bottomNavigation/MusicLibrary.dart';
 
 class MyNavigationDrawer extends StatefulWidget {
   const MyNavigationDrawer({super.key});
@@ -17,11 +19,12 @@ var currentPage = DrawerSection.dashboard;
 class _MyNavigationDrawerState extends State<MyNavigationDrawer> {
   @override
   Widget build(BuildContext context) {
+    setPage();
     return Scaffold(
       appBar: AppBar(
         title: Text("Navigation Drawer"),
       ),
-      body: Text("Hello"),
+      body: mainContainer,
       drawer: Drawer(
         child: SingleChildScrollView(
             child: Column(
@@ -65,5 +68,13 @@ class _MyNavigationDrawerState extends State<MyNavigationDrawer> {
         ),
       ),
     );
+  }
+
+  void setPage() {
+    if (currentPage == DrawerSection.dashboard) {
+      mainContainer = MyHomeScreen();
+    } else if (currentPage == DrawerSection.profile) {
+      mainContainer = MyMusicLibrary();
+    }
   }
 }
