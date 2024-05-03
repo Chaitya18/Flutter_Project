@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       context,
                       MaterialPageRoute(
                           builder: (context) => MyAboutPage(
-                                name: name,
+                                sname: name,
                               )));
                 },
                 child: Text('About Page'))

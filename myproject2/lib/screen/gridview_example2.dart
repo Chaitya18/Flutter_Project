@@ -105,9 +105,20 @@ class _MyGridViewExampleState extends State<MyGridViewExample> {
             ),
             Expanded(
                 child: GridView.count(
-              crossAxisCount: 2,
+              crossAxisCount: 3,
               crossAxisSpacing: 10,
               mainAxisSpacing: 10,
+              children: [
+                Container(
+                  child: Image.asset("assets/chips.pnh"),
+                ),
+                Container(
+                  child: Image.asset("assets/chips.pnh"),
+                ),
+                Container(
+                  child: Image.asset("assets/chips.pnh"),
+                ),
+              ],
             ))
           ],
         ),

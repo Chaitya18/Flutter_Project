@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class MyAboutPage extends StatelessWidget {
-  MyAboutPage({super.key, required this.name});
-  String? name;
+  MyAboutPage({super.key, required this.sname});
+  String? sname;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +19,7 @@ class MyAboutPage extends StatelessWidget {
                 child: Text("GO To Home Page")),
           ),
           Container(
-            child: Text(name!),
+            child: Text(sname!),
           )
         ],
       ),

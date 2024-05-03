@@ -11,9 +11,7 @@ class _MyTaskState extends State<MyTask> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //appBar: AppBar(
       backgroundColor: Color.fromRGBO(255, 219, 172, 10),
-      //),
       body: SingleChildScrollView(
         child: SafeArea(
             child: Column(
